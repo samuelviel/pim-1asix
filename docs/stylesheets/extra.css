@@ -1,0 +1,49 @@
+:root {
+  --pim-ra1: #14746f;
+  --pim-ra2: #1d6fa5;
+  --pim-ra3: #9a6700;
+  --pim-ra4: #7a3e9d;
+}
+
+/* Etiquetes de resultats d'aprenentatge */
+.ra {
+  display: inline-block;
+  padding: 0.1rem 0.5rem;
+  border-radius: 0.6rem;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  color: #fff;
+  white-space: nowrap;
+  vertical-align: middle;
+}
+.ra1 { background: var(--pim-ra1); }
+.ra2 { background: var(--pim-ra2); }
+.ra3 { background: var(--pim-ra3); }
+.ra4 { background: var(--pim-ra4); }
+
+/* Targetes de la portada */
+.md-typeset .grid.cards > ul > li {
+  border-radius: 0.5rem;
+}
+
+/* Taules una mica més compactes */
+.md-typeset table:not([class]) th {
+  background-color: var(--md-default-fg-color--lightest);
+}
+.md-typeset table:not([class]) td,
+.md-typeset table:not([class]) th {
+  padding: 0.5em 0.9em;
+}
+
+/* Rúbriques: primera columna destacada */
+.rubrica td:first-child,
+.rubrica th:first-child {
+  font-weight: 600;
+}
+
+/* Marca de pes d'avaluació */
+.pes {
+  font-variant-numeric: tabular-nums;
+  font-weight: 700;
+}

@@ -1,0 +1,115 @@
+site_name: Projecte Intermodular · 1r ASIX
+site_description: Materials del mòdul de Projecte Intermodular de 1r del CFGS d'Administració de Sistemes Informàtics en Xarxa
+site_author: Samuel Viel Malonda
+site_url: https://samuelviel.github.io/pim-1asix/
+repo_url: https://github.com/samuelviel/pim-1asix
+repo_name: pim-1asix
+edit_uri: edit/main/docs/
+
+copyright: >
+  Materials del mòdul de Projecte Intermodular · 1r ASIX ·
+  <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.ca">CC BY-SA 4.0</a>
+
+theme:
+  name: material
+  language: ca
+  icon:
+    logo: material/server-network
+    repo: fontawesome/brands/github
+  favicon: assets/favicon.png
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - navigation.footer
+    - navigation.indexes
+    - toc.follow
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - content.action.edit
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: teal
+      accent: amber
+      toggle:
+        icon: material/weather-night
+        name: Canvia a mode fosc
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: teal
+      accent: amber
+      toggle:
+        icon: material/weather-sunny
+        name: Canvia a mode clar
+
+extra_css:
+  - stylesheets/extra.css
+
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+      toc_depth: 3
+  - pymdownx.details
+  - pymdownx.caret
+  - pymdownx.mark
+  - pymdownx.tilde
+  - pymdownx.keys
+  - pymdownx.snippets
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+plugins:
+  - search:
+      lang: es
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/samuelviel/pim-1asix
+      name: Repositori del mòdul
+
+nav:
+  - Inici: index.md
+  - El mòdul:
+      - modul/index.md
+      - Resultats d'aprenentatge: modul/resultats.md
+      - Metodologia: modul/metodologia.md
+      - Avaluació: modul/avaluacio.md
+      - Calendari: modul/calendari.md
+  - El projecte:
+      - projecte/index.md
+      - Quadern de seguiment: projecte/quadern.md
+      - Lliurables i format: projecte/lliurables.md
+  - Unitats:
+      - UP1 · Eines de projectes: up1/index.md
+      - UP2 · Planificació i requisits: up2/index.md
+      - UP3 · Viabilitat i abast: up3/index.md
+      - UP4 · Disseny: up4/index.md
+      - UP5 · Elaboració: up5/index.md
+      - UP6 · Proves i documentació: up6/index.md
+      - UP7 · Defensa: up7/index.md
+  - Recursos:
+      - recursos/index.md
+      - Plantilles: recursos/plantilles.md
+      - Preguntes freqüents: recursos/faq.md
